@@ -8,7 +8,6 @@ body {
     background: #0D0D0D; /* Darker background for the terminal */
     font-family: cursor, monospace;
     overflow-x: hidden;
-    text-shadow: 0 0.2rem 1rem #0c7b46;
   }
   
   ::selection {
@@ -94,16 +93,13 @@ body {
     margin-left: 20px;
   }
   .index {
-    color: #DCDCCC;
+    color: #33FF33;
   }
   .color2 {
     color: #B89076;
   }
-  .color3 {
-    color: #FFF;
-  }
   .command {
-    color: #FFF;
+    color: #33FF33;
     text-shadow: 0 0 5px #33FF33; /* Bright green with glow for commands */
   }
   .error {
@@ -114,7 +110,7 @@ body {
   }
   .inherit,
   a {
-    color: #3377FF;
+    color: #9C8394;
   }
   a {
     text-decoration: inherit;

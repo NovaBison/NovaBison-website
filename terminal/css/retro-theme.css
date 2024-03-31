@@ -4,8 +4,8 @@ body {
     min-height: 99%;
     width: 100%;
     min-width: 550px;
-    color: #33FF33; /* Bright green, similar to Linux terminal text */
-    background: #0D0D0D; /* Darker background for the terminal */
+    color: #FFF; /* Bright green, similar to Linux terminal text */
+    background: #031e11; /* Darker background for the terminal */
     font-family: cursor, monospace;
     overflow-x: hidden;
     text-shadow: 0 0.2rem 1rem #0c7b46;
@@ -52,7 +52,7 @@ body {
   #command {
     cursor: text;
     height: 50px;
-    color: #33FF33; /* Command line color */
+    color: #FFF; /* Command line color */
   }
   #liner {
     line-height: 1.3em;
@@ -62,7 +62,7 @@ body {
     opacity: 0;
   }
   #liner::before {
-    color: #33FF33; /* Prompt color */
+    color: #FFF; /* Prompt color */
     content: "visitor@portfolio:~$";
   }
   #liner.password::before {
@@ -97,14 +97,14 @@ body {
     color: #DCDCCC;
   }
   .color2 {
-    color: #B89076;
+    color: #FFF;
   }
   .color3 {
     color: #FFF;
   }
   .command {
     color: #FFF;
-    text-shadow: 0 0 5px #33FF33; /* Bright green with glow for commands */
+    text-shadow: 0 0 5px #FFF; /* Bright green with glow for commands */
   }
   .error {
     color: #B89076;
@@ -138,4 +138,24 @@ body {
     body {
       font-size: 10px; /* Even smaller font for very small devices */
     }
+  }
+  
+  
+  /* added styles from codepen */
+  
+  .scanlines {
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(
+        to bottom,
+        rgba(255,255,255,0),
+        rgba(255,255,255,0) 50%,
+        rgba(0,0,0,.2) 70%,
+        rgba(0,0,0,.6)
+    );
+    background-size: 100% .3rem;
+    position: fixed;
+    pointer-events: none;
   }

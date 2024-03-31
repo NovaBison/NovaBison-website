@@ -1,0 +1,164 @@
+body {
+    margin: 0;
+    padding: 15px 20px;
+    min-height: 99%;
+    width: 100%;
+    min-width: 550px;
+    color: #0ff0b3; /* Neon cyan for text, mimicking vibrant jungle flora */
+    background: #022d22; /* Deep jungle green background, dark and immersive */
+    font-family: 'cursor', monospace;
+    overflow-x: hidden;
+    text-shadow: 0 0.2rem 1rem #005f56; /* Dark green text shadow for a lush effect */
+}
+
+::selection {
+    color: #022d22;
+    background-color: #0ff0b3; /* Neon cyan text selection for stark, vibrant contrast */
+}
+::-moz-selection {
+    color: #022d22;
+    background-color: #0ff0b3;
+}
+
+textarea {
+    left: -1000px;
+    position: absolute;
+}
+
+b {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Cursor Start */
+.cursor {
+    font-size: 12px;
+    color: #0ff0b3; /* Cursor color to neon cyan for vibrant visibility */
+    background-color: #0ff0b3; /* Same for cursor background */
+    position: relative;
+    opacity: 1;
+    height: 1.5em;
+    width: 10px;
+    max-width: 10px;
+    transform: translateY(4px);
+    overflow: hidden;
+    text-indent: -5px;
+    display: inline-block;
+    text-decoration: blink;
+    animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+#command {
+    cursor: text;
+    height: 50px;
+    color: #0ff0b3; /* Command line color updated to neon cyan */
+}
+
+#liner {
+    line-height: 1.3em;
+    margin-top: -2px;
+    animation: show 0.5s ease forwards;
+    animation-delay: 1.2s;
+    opacity: 0;
+}
+
+#liner::before {
+    color: #0ff0b3; /* Prompt color changed to neon cyan */
+    content: "visitor@portfolio:~$";
+}
+
+#liner.password::before {
+    content: "Password:";
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Cursor End */
+
+p {
+    display: block;
+    line-height: 1.3em;
+    margin: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0;
+    letter-spacing: 0.05em;
+    animation: typing 0.5s steps(30, end);
+}
+
+.no-animation {
+    animation: typing 0 steps(30, end);
+}
+
+.margin {
+    margin-left: 20px;
+}
+
+.index {
+    color: #e1ff0d; /* Bright neon yellow for index and highlights */
+}
+
+.color2 {
+    color: #ff0789; /* Neon pink for a pop of vibrant color */
+}
+
+.color3 {
+    color: #fff; /* White remains for contrast and readability */
+}
+
+.command {
+    color: #fff;
+    text-shadow: 0 0 5px #0ff0b3; /* Neon cyan glow for commands */
+}
+
+.error {
+    color: #ff0789; /* Neon pink for errors, standing out sharply */
+}
+
+.white {
+    color: #fff; /* Keeping white for clear readability */
+}
+
+.inherit,
+a {
+    color: #7df9ff; /* Electric blue for links, adding another layer of neon vibrance */
+}
+
+a {
+    text-decoration: inherit;
+}
+
+a:hover {
+    background: #0ff0b3;
+    color: #022d22; /* Hover effect with neon cyan and deep jungle green */
+}
+
+a:focus {
+    outline: 0;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 12px; /* Smaller font for tablets and mobile phones */
+        padding: 10px; /* Adjust padding */
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 10px; /* Even smaller font for very small devices */
+    }
+}

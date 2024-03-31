@@ -1,0 +1,164 @@
+body {
+    margin: 0;
+    padding: 15px 20px;
+    min-height: 99%;
+    width: 100%;
+    min-width: 550px;
+    color: #87CEEB; /* Soft sky blue for text, reminiscent of a clear winter sky */
+    background: #151529; /* Deep midnight blue, evoking the early nights of winter */
+    font-family: 'cursor', monospace;
+    overflow-x: hidden;
+    text-shadow: 0 0.2rem 1rem #555E70; /* Frosty gray text shadow for a chilled effect */
+}
+
+::selection {
+    color: #1E1E2E;
+    background-color: #87CEEB; /* Soft sky blue text selection for a frosty contrast */
+}
+::-moz-selection {
+    color: #1E1E2E;
+    background-color: #87CEEB;
+}
+
+textarea {
+    left: -1000px;
+    position: absolute;
+}
+
+b {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Cursor Start */
+.cursor {
+    font-size: 12px;
+    color: #A0D2EB; /* Lighter ice blue for the cursor, mimicking icicles */
+    background-color: #A0D2EB; /* Same for cursor background */
+    position: relative;
+    opacity: 1;
+    height: 1.5em;
+    width: 10px;
+    max-width: 10px;
+    transform: translateY(4px);
+    overflow: hidden;
+    text-indent: -5px;
+    display: inline-block;
+    text-decoration: blink;
+    animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+#command {
+    cursor: text;
+    height: 50px;
+    color: #A0D2EB; /* Command line color updated to light ice blue */
+}
+
+#liner {
+    line-height: 1.3em;
+    margin-top: -2px;
+    animation: show 0.5s ease forwards;
+    animation-delay: 1.2s;
+    opacity: 0;
+}
+
+#liner::before {
+    color: #A0D2EB; /* Prompt color changed to light ice blue */
+    content: "visitor@portfolio:~$";
+}
+
+#liner.password::before {
+    content: "Password:";
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Cursor End */
+
+p {
+    display: block;
+    line-height: 1.3em;
+    margin: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0;
+    letter-spacing: 0.05em;
+    animation: typing 0.5s steps(30, end);
+}
+
+.no-animation {
+    animation: typing 0 steps(30, end);
+}
+
+.margin {
+    margin-left: 20px;
+}
+
+.index {
+    color: #B6D0E2; /* Pale frost blue for index and highlights, like light reflecting off snow */
+}
+
+.color2 {
+    color: #C4C4C4; /* Soft gray for secondary elements, suggesting winter clouds */
+}
+
+.color3 {
+    color: #FFF; /* Pure white remains for contrast and readability, symbolizing snow */
+}
+
+.command {
+    color: #FFF;
+    text-shadow: 0 0 5px #A0D2EB; /* Light ice blue glow for commands, adding a frosty aura */
+}
+
+.error {
+    color: #FF6B6B; /* Soft red for errors, like the warmth needed in cold */
+}
+
+.white {
+    color: #FFF; /* Keeping white for clear readability */
+}
+
+.inherit,
+a {
+    color: #7DBBE6; /* Frozen lake blue for links, adding to the chilly theme */
+}
+
+a {
+    text-decoration: inherit;
+}
+
+a:hover {
+    background: #A0D2EB;
+    color: #1E1E2E; /* Hover effect with light ice blue and deep midnight blue */
+}
+
+a:focus {
+    outline: 0;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 12px; /* Smaller font for tablets and mobile phones */
+        padding: 10px; /* Adjust padding */
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 10px; /* Even smaller font for very small devices */
+    }
+}
