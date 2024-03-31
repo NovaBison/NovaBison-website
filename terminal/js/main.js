@@ -55,7 +55,7 @@ function enterKey(e) {
     if (e.keyCode == 13) {
       commands.push(command.innerHTML);
       git = commands.length;
-      addLine("visitor@portfolio:~$ " + command.innerHTML, "no-animation", 0);
+      addLine("visitor@NovaBison/home:~$ " + command.innerHTML, "no-animation", 0);
       commander(command.innerHTML.toLowerCase());
       command.innerHTML = "";
       textarea.value = "";
@@ -151,13 +151,6 @@ function commander(cmd) {
     case "whoami":
       loopLines(whoami, "color2 margin", 80);
       break;
-    case "game":
-      loopLines(gameInfo, "color2 margin", 80);
-      break;
-    case "run game":
-      addLine("Opening Game...", "color2", 80);
-      newTab(game);
-      break;
     case "sudo admin login":
       addLine("System detecting a hacker - redirecting to punishment", "color2", 80);
       setTimeout(function() {
@@ -183,7 +176,7 @@ function commander(cmd) {
       addLine("<br>", "command", 80 * commands.length + 50);
       break;
     case "email":
-      addLine('Opening mailto:<a href="mailto:lyndon.simpson@gmail.com">lyndon.simpson@gmail.com</a>...', "color2", 80);
+      addLine('Opening mailto:<a href="mailto:novabison92@gmail.com">novabison92@gmail.com</a>...', "color2", 80);
       newTab(email);
       break;
     case "clear":
@@ -196,25 +189,16 @@ function commander(cmd) {
       loopLines(banner, "", 80);
       break;
     // socials
-    case "portfolio":
-      addLine("Opening Portfolio...", "color2", 80);
-      newTab(portfolio);
-      break;
-    case "resume":
-      addLine("Opening Resume...", "color2", 0);
-      newTab(resume);
-      break;
-    case "linkedin":
-      addLine("Opening LinkedIn...", "color2", 0);
-      newTab(linkedin);
-      break;
-    case "game":
-      addLine("Opening Game...", "color2", 0);
-      newTab(game);
-      break;
     case "github":
       addLine("Opening GitHub...", "color2", 0);
       newTab(github);
+      break;
+    case "twitch":
+      addLine("Opening Twitch...", "color2", 80);
+      newTab(twitch);
+    case "website":
+      addLine("Opening website...", "color2", 80);
+      newTab(website);
       break;
     default:
       addLine("<span class=\"inherit\">Command not found. For a list of commands, type <span class=\"command\">'help'</span>.</span>", "error", 100);

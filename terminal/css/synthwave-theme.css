@@ -70,7 +70,7 @@ b {
 
 #liner::before {
     color: #f72585; /* Prompt color changed to vibrant pink */
-    content: "visitor@portfolio:~$";
+    content: "visitor@NovaBison/home:~$";
 }
 
 #liner.password::before {

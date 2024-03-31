@@ -70,7 +70,7 @@ b {
 
 #liner::before {
     color: #b58900; /* Prompt color in Solarized yellow for emphasis */
-    content: "visitor@portfolio:~$";
+    content: "visitor@NovaBison/home:~$";
 }
 
 #liner.password::before {

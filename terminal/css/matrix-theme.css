@@ -62,7 +62,7 @@ body {
   }
   #liner::before {
     color: #33FF33; /* Prompt color */
-    content: "visitor@portfolio:~$";
+    content: "visitor@NovaBison/home:~$";
   }
   #liner.password::before {
     content: "Password:";
