@@ -1,1 +1,1 @@
-# MyProject
+# The official NovaBison website
