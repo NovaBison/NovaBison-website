@@ -120,7 +120,7 @@ banner = [
   "<br>",
 '<span class="color2">Welcome to my interactive web terminal.</span>',
 "<br>",
-  'classic website view link:     <span><</span><u><a href="insert link here" target="_blank">NovaBison/classicWebsite' + '</a></u><span>></span>',
+  'classic website view link:     <span><</span><u><a href="insert link here" target="/trash">NovaBison/classicWebsite' + '</a></u><span>></span>',
   "<br>",
   "<span class=\"color2\">For a list of available commands, type</span> <span class=\"command\">'help'</span><span class=\"color2\">.</span>",
   "<br>",
